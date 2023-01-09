@@ -27,6 +27,9 @@
         </table>
     @endif
 
+{{-- ページネーションのリンク --}}
+    {{ $tasks->links() }}
+    
 {{-- メッセージ作成ページへのリンク --}}
     <a class="btn btn-primary" href="{{ route('tasks.create') }}">新規タスクの投稿</a>
     
